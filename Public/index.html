@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Pricncipal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/736x/99/ea/55/99ea55b9d56a1c76cf813c306499133d.jpg">
+</head>
+<body>
+    <!-- Menu Droptodown
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Categorias</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Itadori</a></li>
+                    <li><a href="#">Megumi</a></li>
+                    <li><a href="#">Nobara</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sobre o Trio</a></li>
+            <li><a href="#">informações</a></li>
+        </ul>
+    </nav>
+
+    <-- Slider -->
+    <div class="slider">
+        <div class="slide">
+            <img src="./jujutsu.jpg" alt="Imagem 1">
+        </div>
+        <div class="slide">
+            <img src="./jujutsu2.jpg" alt="Produto 2">
+        </div>
+        <div class="slide">
+            <img src="./jjk-screenshot-17.jpg" alt="Produto 3">
+        </div>
+    </div>
+
+    <!-- Cards de Produtos/Serviços -->
+    <section class="product-cards">
+        <div class="card">
+            <img src="./thumb-1920-1218905.png" alt="Itadori">
+            <h3>Itadori Yuji</h3>
+            <p>Yuji Itadori é o protagonista de Jujutsu Kaisen, um estudante que ganha habilidades sobrenaturais após ingerir um dedo de uma entidade amaldiçoada. </p>
+            <a href="#">Saiba Mais</a>
+        </div>
+        <div class="card">
+            <img src="./jujutsu-kaisen-desktop-us5ufcmbb6oz6lf0.jpg" alt="Megumi">
+            <h3>Megumi Fushiguro</h3>
+            <p>Megumi Fushiguro é um personagem de Jujutsu Kaisen, conhecido por ser um poderoso feiticeiro jujutsu com habilidades de invocação e um caráter reservado.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+        <div class="card">
+            <img src="./1272714.png" alt="Nobara">
+            <h3>Nobara Kugisaki</h3>
+            <p>Nobara Kugisaki é uma personagem de Jujutsu Kaisen, uma exorcista jujutsu destemida e habilidosa que usa técnicas baseadas em habilidades de voodoo e ferramentas encantadas.</p>
+            <a href="#">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Site de Personagens. Todos os direitos reservados.</p>
+        <ul class="footer-menu">
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Suporte</a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        // Slider script
+        let index = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === n ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            index = (index + 1) % totalSlides;
+            showSlide(index);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        showSlide(index); // Initial display
+    </script>
+</body>
+</html>

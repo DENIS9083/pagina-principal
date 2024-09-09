@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231227/pngtree-seamless-geometric-background-white-tile-texture-image_13925907.png);
+}
+
+nav {
+    background-color: #0b0707;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin:  35px;
+}
+
+nav ul li a {
+    color: #ff5543;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #ff5543;
+}
+ nav ul li .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px  rgb(0, 0, 0);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+nav ul li .dropdown-content li a:hover{
+    background-color: gray;
+}
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-width: 10px;
+    border-style: groove;
+    border-color: black;
+}
